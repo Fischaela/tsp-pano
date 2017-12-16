@@ -1,9 +1,5 @@
 /* global AFRAME */
 
-/**
- * Component that listens to an event, fades out an entity, swaps the texture, and fades it
- * back in.
- */
 AFRAME.registerComponent('play-video', {
   schema: {
     on: {type: 'string'},
@@ -26,6 +22,10 @@ AFRAME.registerComponent('play-video', {
 
       div.style = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);';
       button.style = 'position: absolute; top: -40px; right: -40px; width: 40px; height: 40px; background-image: url("../assets/button_close.png"); background-size: cover; cursor: pointer; border: none;';
+
+      button.addEventListener('click', function() {
+        document.body.removeChild(div);
+      });
 
       video = document.getElementById('video').src += "?rel=0&autoplay=1";
     });
