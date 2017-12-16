@@ -7,12 +7,13 @@
 AFRAME.registerComponent('play-video', {
   schema: {
     on: {type: 'string'},
+    url: {type: 'string'}
   },
 
   init: function () {
     var el = this.el;
     var data = this.data;
-    var url = '<iframe width="560" height="315" src="https://www.youtube.com/embed/VFkCGz28QQ8" frameborder="0" gesture="media" allow="encrypted-media" id="video" allowfullscreen></iframe>';
+    var url = '<iframe width="560" height="315" src="' + data.url + '" frameborder="0" gesture="media" allow="encrypted-media" id="video" allowfullscreen></iframe>';
     var video;
 
 
