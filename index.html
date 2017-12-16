@@ -12,11 +12,15 @@
     <script src="aframe-event-set-component.js"></script>
     <script src="aframe-mouse-cursor-component.min.js"></script>
     <script src="components/play-video.js"></script>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="button" crossorigin="anonymous" src="assets/button.png">
+        <img id="button_00" crossorigin="anonymous" src="assets/button_00.png">
+        <img id="button_01" crossorigin="anonymous" src="assets/button_01.png">
+        <img id="button_02" crossorigin="anonymous" src="assets/button_02.png">
+        <img id="button_03" crossorigin="anonymous" src="assets/button_03.png">
         <audio id="click-sound" crossorigin="anonymous" src="assets/click.ogg"></audio>
         <img id="pano" crossorigin="anonymous" src="assets/tsp_pano.jpg">
       </a-assets>
@@ -26,14 +30,44 @@
 
       <!-- Image links. -->
       <a-entity id="link" class="link"
-          layout="type: line; margin: 1.5" position="-2 -1 -4" rotation="0 45 0"
+          layout="type: line; margin: 1.5" position="-2 -2 -4" rotation="0 45 0"
           geometry="primitive: plane; height: 0.2345; width: 1"
-          material="shader: flat; src: #button"
+          material="shader: flat; src: #button_00"
           event-set__1="_event: mousedown; scale: 1 1 1"
           event-set__2="_event: mouseup; scale: 1.2 1.2 1"
           event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
           event-set__4="_event: mouseleave; scale: 1 1 1"
-          play-video="on: click;"
+          play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
+          sound="on: click; src: #click-sound"></a-entity>
+      <a-entity id="link" class="link"
+          layout="type: line; margin: 1.5" position="3 -2 -4" rotation="0 -45 0"
+          geometry="primitive: plane; height: 0.2345; width: 1"
+          material="shader: flat; src: #button_01"
+          event-set__1="_event: mousedown; scale: 1 1 1"
+          event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+          event-set__4="_event: mouseleave; scale: 1 1 1"
+          play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
+          sound="on: click; src: #click-sound"></a-entity>
+      <a-entity id="link" class="link"
+          layout="type: line; margin: 1.5" position="4 -2.2 0" rotation="0 -65 0"
+          geometry="primitive: plane; height: 0.2345; width: 1"
+          material="shader: flat; src: #button_02"
+          event-set__1="_event: mousedown; scale: 1 1 1"
+          event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+          event-set__4="_event: mouseleave; scale: 1 1 1"
+          play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
+          sound="on: click; src: #click-sound"></a-entity>
+      <a-entity id="link" class="link"
+          layout="type: line; margin: 1.5" position="3.5 -2.2 2" rotation="0 -140 0"
+          geometry="primitive: plane; height: 0.2345; width: 1"
+          material="shader: flat; src: #button_03"
+          event-set__1="_event: mousedown; scale: 1 1 1"
+          event-set__2="_event: mouseup; scale: 1.2 1.2 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
+          event-set__4="_event: mouseleave; scale: 1 1 1"
+          play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
           sound="on: click; src: #click-sound"></a-entity>
 
       <!-- Camera + cursor. -->
