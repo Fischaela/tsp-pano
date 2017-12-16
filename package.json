@@ -6,6 +6,7 @@
     "start": "budo --live --verbose --port 3000 --open"
   },
   "devDependencies": {
+    "aframe-mouse-cursor-component": "^0.5.2",
     "budo": "^7.0.0",
     "ghpages": "0.0.10"
   },
