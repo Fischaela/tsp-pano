@@ -1,3 +1,29 @@
 .a-enter-vr {
   display: none;
 }
+
+.button {
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}
+
+.button--close {
+  background-image: url("assets/button_close.jpg");
+  background-size: cover;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+}
+
+.button--close:hover {
+  background-image: url("assets/button_close_hover.jpg");
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
