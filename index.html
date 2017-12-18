@@ -25,12 +25,18 @@
         <img id="button_02_hover" crossorigin="anonymous" src="assets/button_02_hover.jpg">
         <img id="button_03" crossorigin="anonymous" src="assets/button_03.jpg">
         <img id="button_03_hover" crossorigin="anonymous" src="assets/button_03_hover.jpg">
+        <img id="bottom" crossorigin="anonymous" src="assets/bottom.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="assets/click.ogg"></audio>
         <img id="pano" crossorigin="anonymous" src="assets/tsp_pano.jpg">
       </a-assets>
 
       <!-- 360-degree image. -->
       <a-sky id="image-360" radius="10" src="#pano" phi-start="90" key="13"></a-sky>
+
+      <!-- Bottom -->
+      <a-image src="#bottom" width="10" height="10"
+        position="0 -8.65 0"
+        rotation="-90 0 0"></a-image>
 
       <!-- Image links. -->
       <a-entity id="link" class="link"
