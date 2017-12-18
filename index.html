@@ -18,13 +18,13 @@
     <a-scene>
       <a-assets>
         <img id="button_00" crossorigin="anonymous" src="assets/button_00.jpg">
-				<img id="button_00_hover" crossorigin="anonymous" src="assets/button_00_hover.jpg">
+        <img id="button_00_hover" crossorigin="anonymous" src="assets/button_00_hover.jpg">
         <img id="button_01" crossorigin="anonymous" src="assets/button_01.jpg">
-				<img id="button_01_hover" crossorigin="anonymous" src="assets/button_01_hover.jpg">
+        <img id="button_01_hover" crossorigin="anonymous" src="assets/button_01_hover.jpg">
         <img id="button_02" crossorigin="anonymous" src="assets/button_02.jpg">
-				<img id="button_02_hover" crossorigin="anonymous" src="assets/button_02_hover.jpg">
+        <img id="button_02_hover" crossorigin="anonymous" src="assets/button_02_hover.jpg">
         <img id="button_03" crossorigin="anonymous" src="assets/button_03.jpg">
-				<img id="button_03_hover" crossorigin="anonymous" src="assets/button_03_hover.jpg">
+        <img id="button_03_hover" crossorigin="anonymous" src="assets/button_03_hover.jpg">
         <audio id="click-sound" crossorigin="anonymous" src="assets/click.ogg"></audio>
         <img id="pano" crossorigin="anonymous" src="assets/tsp_pano.jpg">
       </a-assets>
@@ -37,10 +37,10 @@
           layout="type: line; margin: 1.5" position="-2 -2 -4" rotation="0 45 0"
           geometry="primitive: plane; height: 0.2345; width: 1"
           material="shader: flat; src: #button_00"
-          event-set__1="_event: mousedown; scale: 1 1 1"
+          event-set__1="_event: mousedown; scale: 1 1 1;"
           event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-          event-set__4="_event: mouseleave; scale: 1 1 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1; material.src: #button_00_hover"
+          event-set__4="_event: mouseleave; scale: 1 1 1; material.src: #button_00"
           play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
           sound="on: click; src: #click-sound"></a-entity>
       <a-entity id="link" class="link"
@@ -49,8 +49,8 @@
           material="shader: flat; src: #button_01"
           event-set__1="_event: mousedown; scale: 1 1 1"
           event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-          event-set__4="_event: mouseleave; scale: 1 1 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1; material.src: #button_01_hover"
+          event-set__4="_event: mouseleave; scale: 1 1 1; material.src: #button_01"
           play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
           sound="on: click; src: #click-sound"></a-entity>
       <a-entity id="link" class="link"
@@ -59,8 +59,8 @@
           material="shader: flat; src: #button_02"
           event-set__1="_event: mousedown; scale: 1 1 1"
           event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-          event-set__4="_event: mouseleave; scale: 1 1 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1; material.src: #button_02_hover"
+          event-set__4="_event: mouseleave; scale: 1 1 1; material.src: #button_02"
           play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
           sound="on: click; src: #click-sound"></a-entity>
       <a-entity id="link" class="link"
@@ -69,8 +69,8 @@
           material="shader: flat; src: #button_03"
           event-set__1="_event: mousedown; scale: 1 1 1"
           event-set__2="_event: mouseup; scale: 1.2 1.2 1"
-          event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
-          event-set__4="_event: mouseleave; scale: 1 1 1"
+          event-set__3="_event: mouseenter; scale: 1.2 1.2 1; material.src: #button_03_hover"
+          event-set__4="_event: mouseleave; scale: 1 1 1; material.src: #button_03"
           play-video="on: click; video: https://www.youtube.com/embed/VFkCGz28QQ8;"
           sound="on: click; src: #click-sound"></a-entity>
 
