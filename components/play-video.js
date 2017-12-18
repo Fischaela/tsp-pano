@@ -20,8 +20,8 @@ AFRAME.registerComponent('play-video', {
       document.body.appendChild(div).innerHTML = url;
       div.appendChild(button);
 
-      div.style = 'position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);';
-      button.style = 'position: absolute; top: -40px; right: -40px; width: 40px; height: 40px; background-image: url("../assets/button_close.png"); background-size: cover; cursor: pointer; border: none;';
+      div.classList.add('video');
+      button.classList.add('button', 'button--close');
 
       button.addEventListener('click', function() {
         document.body.removeChild(div);
