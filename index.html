@@ -10,12 +10,11 @@
     <script src="aframe-animation-component.js"></script>
     <!-- <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script> -->
     <script src="aframe-event-set-component.js"></script>
-    <script src="aframe-mouse-cursor-component.min.js"></script>
     <script src="components/play-video.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    <a-scene>
+    <a-scene cursor="rayOrigin: mouse">
       <a-assets>
         <img id="button_00" crossorigin="anonymous" src="assets/button_00.jpg">
         <img id="button_00_hover" crossorigin="anonymous" src="assets/button_00_hover.jpg">
@@ -81,7 +80,7 @@
           sound="on: click; src: #click-sound"></a-entity>
 
       <!-- Camera + cursor. -->
-      <a-entity camera look-controls rotation="340 0 0" mouse-cursor></a-entity>
+      <a-entity camera look-controls rotation="340 0 0"></a-entity>
     </a-scene>
   </body>
 </html>
